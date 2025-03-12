@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #a8d5ba; /* Verde mar clarito */
     margin: 0;
     padding: 0;
     display: flex;
@@ -57,4 +57,15 @@ button:hover {
 
 .resultados p {
     margin: 5px 0;
+}
+
+/* Estilo para los resultados "verdadero" o "falso" */
+.verdadero {
+    color: green;
+    font-size: 24px;
+}
+
+.falso {
+    color: red;
+    font-size: 24px;
 }

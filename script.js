@@ -8,8 +8,8 @@ function calcularResultados() {
     const resultadoOR = verdadero || falso;
     const resultadoXOR = verdadero !== falso; // XOR es verdadero si uno es true y el otro es false
 
-    // Mostrar los resultados en el HTML
-    document.getElementById('resultadoAND').innerText = resultadoAND ? 'Verdadero' : 'Falso';
-    document.getElementById('resultadoOR').innerText = resultadoOR ? 'Verdadero' : 'Falso';
-    document.getElementById('resultadoXOR').innerText = resultadoXOR ? 'Verdadero' : 'Falso';
+    // Mostrar los resultados en el HTML con los símbolos correspondientes
+    document.getElementById('resultadoAND').innerHTML = resultadoAND ? '<span class="verdadero">✔</span>' : '<span class="falso">✘</span>';
+    document.getElementById('resultadoOR').innerHTML = resultadoOR ? '<span class="verdadero">✔</span>' : '<span class="falso">✘</span>';
+    document.getElementById('resultadoXOR').innerHTML = resultadoXOR ? '<span class="verdadero">✔</span>' : '<span class="falso">✘</span>';
 }
