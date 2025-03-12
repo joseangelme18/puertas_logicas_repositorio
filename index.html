@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Puertas Lógicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones de Puertas Lógicas</h1>
+        <form id="formulario">
+            <label for="verdadero">Verdadero</label>
+            <input type="checkbox" id="verdadero" name="verdadero">
+            <br><br>
+            <label for="falso">Falso</label>
+            <input type="checkbox" id="falso" name="falso">
+            <br><br>
+            <button type="button" onclick="calcularResultados()">Calcular</button>
+            <button type="button" onclick="resetearResultados()">Resetear Resultados</button>
+        </form>
+
+        <div class="resultados">
+            <h2>Resultados:</h2>
+            <ul id="listaResultados"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
